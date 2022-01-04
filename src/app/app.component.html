@@ -1,0 +1,23 @@
+<div class="layoutColumn align-items-center mt-50">
+  <section class="layout-row align-items-center justify-content-between">
+    <label>Celsius</label>
+    <input
+      #c
+      type="number"
+      id="celsius"
+      [(ngModel)]="celsiusNumber"
+      (ngModelChange)="celToFah(c.value)"
+    />
+  </section>
+
+  <section class="layout-row align-items-center justify-content-between">
+    <label>Fahrenheit</label>
+    <input
+      #f
+      type="number"
+      id="fahrenheit"
+      [(ngModel)]="fahrenheitNumber"
+      (ngModelChange)="FahToCel(f.value)"
+    />
+  </section>
+</div>
